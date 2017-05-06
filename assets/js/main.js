@@ -22,3 +22,10 @@ var integrantes = [];
 	var gilia = new Misquad("Gilia Gongora", 28, ["Eschuchar musica", "Cantar", "Bailar"]);
 	integrantes.push(gilia);
 
+	integrantes.forEach(function(elemento){
+		lista.innerHTML += "<br>" + "<b>Nombre: </b>" + elemento.nombre + "<br>" + "<b>Edad: </b>" + elemento.edad + "<br>" + "<b>Hobbies: </b>" + this.hobbies + "<br>";
+		
+		elemento.hobbies.forEach(function(e){
+			lista.innerHTML += "<li>" + e + "<br>";
+		})
+	})
