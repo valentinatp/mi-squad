@@ -1,26 +1,23 @@
-function Misquad(nombre, apellido, edad, hobbies){
+function Misquad(nombre, edad, hobbies){
 	this.nombre = nombre;
-	this.apellido = apellido;
 	this.edad = edad;
 	this.hobbies = hobbies;
-	this.datos = function(){
-	var impr = document.getElementById("datitos");
-	var conte = document.getElementsByClassName("datote");
-	conte[0].innerHTML += "<b>Nombre: </b>" + this.nombre + " " + this.apellido + "<br>" + "<b>Edad: </b>" + this.edad + "<br>" + "<b>Hobbies: </b>" + "<li>"+this.hobbies + "<br>" + "<br>";
-	}
+	//this.id = id;
 }
 
-	var pez = new Misquad("Maria Paz", "Rojas", 26, "escuchar musica, comer, hablar ingles");
-	pez.datos()
-	var dani = new Misquad("Daniela", "Sanchez", 24, "escuchar musica, cantar, ver series");
-	dani.datos()
-	var diana = new Misquad("Diana", "Monsalve", 29, "hacer scratch, escuchar musica, negocios");
-	diana.datos()
-	var trini = new Misquad("Trinidad", "Fuentes", 26, "video juegos, puglover, dormir");
-	trini.datos()
-	var vale = new Misquad("Valentina", "Lopez", 25, "tarot, idiomas, peliculas mudas");
-	vale.datos()
-	var mari = new Misquad("Maribel", "Diaz", 30, "salir a tomar cafe, comer muffins, escribir");
-	mari.datos()
-	var gilia = new Misquad("Gilia", "Gongora", 28, "eschuchar musica, cantar, bailar");
-	gilia.datos()
+var integrantes = [];
+
+	var pez = new Misquad("Maria Paz Rojas", 26, ["Escuchar musica", "Comer", "Hablar ingles"]);
+	var dani = new Misquad("Daniela Sanchez", 24, ["Escuchar musica", "Cantar", "Ver series"]);
+
+	var diana = new Misquad("Diana Monsalve", 29, ["Hacer scratch", "Escuchar musica", "Negocios"]);
+	
+	var trini = new Misquad("Trinidad Fuentes", 26, ["Video juegos", "Puglover", "Dormir"]);
+	
+	var vale = new Misquad("Valentina Lopez", 25, ["Tarot", "Idiomas", "Peliculas mudas"]);
+
+	var mari = new Misquad("Maribel Diaz", 30, ["Salir a tomar cafe", "Comer muffins", "Escribir"]);
+
+	var gilia = new Misquad("Gilia Gongora", 28, ["Eschuchar musica", "Cantar", "Bailar"]);
+	
+
